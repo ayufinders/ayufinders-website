@@ -142,7 +142,7 @@ export default function LatestUpdatesPage() {
                     {updates[0]?.title}
                   </h2>
                   
-                  <Link href={"/latest-updates/"+updates[0]?.id}></Link><Button size="sm">Read Full Article</Button>
+                  <Link href={"/latest-updates/"+updates[0]?.id}><Button size="sm">Read Full Article</Button></Link>
                 </div>
               </div>
             </div>
