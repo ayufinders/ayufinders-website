@@ -118,6 +118,7 @@ const Navbar = () => {
                     </Link>
                   ))}
                   {/* Call Button */}
+                  <a href="tel:+918881820484">
                   <Button
                     className="hover:bg-gradient-to-r text-gray-100 transition-all duration-300 ease-in-out cursor-pointer from-primary to-gray-400 flex items-center font-light text-lg gap-2 rounded-full mt-8 w-fit"
                     size="lg"
@@ -125,6 +126,7 @@ const Navbar = () => {
                     <Phone className="h-5 w-5" />
                     <span>Contact us</span>
                   </Button>
+                  </a>
                 </div>
               </SheetContent>
             </Sheet>
