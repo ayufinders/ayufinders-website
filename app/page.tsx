@@ -60,7 +60,7 @@ export default function Home() {
   }, [])
 
   if (loading) return <GeneralSkeleton count={3} classname="container mx-auto mt-20 py-20 px-8"/>
-  
+
   return (
     <div className="mt-20 flex flex-col min-h-screen">
       {/* Hero Banner */}
@@ -124,7 +124,7 @@ export default function Home() {
         </section>
 
         {/* Top Colleges Section */}
-        <section className="shadow-lg max-md:py-10 max-md:px-4 mb-20 max-lg:bg-primary/10 lg:bg-gradient-to-b lg:to-primary lg:via-primary/60 lg:from-primary/5 border md:p-12 rounded-2xl">
+        <section className="shadow-lg max-md:py-10 max-md:px-4 mb-20 lg:bg-gradient-to-b lg:to-primary lg:via-primary/60 lg:from-gray-100 border md:p-12 rounded-2xl">
           <SectionHeading 
             title="Top BAMS Colleges" 
             subtitle="Discover India's premier institutions for Ayurvedic medicine"
