@@ -19,6 +19,7 @@ import {
 import SectionHeading from "@/components/SectionHeading";
 import CTA from "@/components/CTA";
 import GeneralSkeleton from "@/components/Loader";
+import Link from "next/link";
 
 interface Update {
   id: number;
@@ -141,7 +142,7 @@ export default function LatestUpdatesPage() {
                     {updates[0]?.title}
                   </h2>
                   
-                  <Button size="sm">Read Full Article</Button>
+                  <Link href={"/latest-updates/"+updates[0]?.id}></Link><Button size="sm">Read Full Article</Button>
                 </div>
               </div>
             </div>
