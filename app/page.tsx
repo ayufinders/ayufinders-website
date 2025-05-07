@@ -59,7 +59,8 @@ export default function Home() {
     fetchData();
   }, [])
 
-  if(loading) return <GeneralSkeleton count={3} classname={"mt-20 container mx-auto py-20"} />
+  if (loading) return <GeneralSkeleton count={3} classname="container mx-auto mt-20 py-20 px-8"/>
+  
   return (
     <div className="mt-20 flex flex-col min-h-screen">
       {/* Hero Banner */}
