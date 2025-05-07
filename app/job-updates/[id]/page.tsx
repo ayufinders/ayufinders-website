@@ -123,13 +123,12 @@ const JobDetailsPage = () => {
     fetchRelatedJobs();
   }, [job]);
 
-  if (loading)
-    return (
-      <GeneralSkeleton
-        count={3}
-        classname="container mx-auto mt-20 py-20 px-8"
-      />
-    );
+  if (loading) return (
+    <GeneralSkeleton
+      count={3}
+      classname="container mx-auto mt-20 py-20 px-8"
+    />
+  );
 
   return (
     <main className="mt-20 lg:py-16 min-h-screen">

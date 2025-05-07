@@ -1,5 +1,6 @@
 "use client";
 import CTA from "@/components/CTA";
+import GeneralSkeleton from "@/components/Loader";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,21 +19,28 @@ const CollegeDetailsPage = () => {
   const router = useRouter();
   const params = useParams();
   const { id } = params;
+  const [loading, setLoading] = useState(true)
 
   const [blog, setBlog] = useState<Blog | null>(null);
   const [relatedBlogs, setRelatedBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
-    const fetchBlog = async () => {
-      const res = await fetch(`/api/get-latest-update-by-id?id=${id}`);
-      const data = await res.json();
-      setBlog(data[0]);
-      
-    };
-
-    fetchBlog();
+    try{
+      const fetchBlog = async () => {
+        const res = await fetch(`/api/get-latest-update-by-id?id=${id}`);
+        const data = await res.json();
+        setBlog(data[0]);
+        
+      };
+  
+      fetchBlog();
+    } catch (e){
+      console.log(e);
+    } finally {
+      setLoading(false);
+    }
+    
   }, [id]);
-  console.log(blog?.desc_notification)
 
   useEffect(() => {
     const fetchRelatedColleges = async () => {
@@ -44,6 +52,13 @@ const CollegeDetailsPage = () => {
     };
     fetchRelatedColleges();
   }, [blog]);
+
+  if (loading) return (
+    <GeneralSkeleton
+      count={3}
+      classname="container mx-auto mt-20 py-20 px-8"
+    />
+  )
 
   return (
     <main className="mt-20 lg:py-16 min-h-screen">
