@@ -207,7 +207,7 @@ const JobDetailsPage = () => {
                   <Dialog open={open} onOpenChange={setOpen}>
                     <Button
                       onClick={() => setOpen(true)}
-                      className="bg-green-500 hover:bg-green-600 text-white"
+                      className="bg-blue-500 hover:bg-blue-600 text-white"
                     >
                       Apply for Job
                     </Button>
@@ -335,7 +335,7 @@ const JobDetailsPage = () => {
                         <Button
                           onClick={handleSubmit}
                           type="submit"
-                          className="bg-green-500 hover:bg-green-600 text-white"
+                          className="bg-blue-500 hover:bg-blue-600 text-white"
                         >
                           {formLoading ? "Sending..." : "Send"}
                         </Button>
