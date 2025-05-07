@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="flex h-16 md:h-20 items-center justify-between px-4">
           <div className="flex justify-flex-start items-center gap-12">
             <Link href="/" className="flex items-center gap-2">
-              <span className="tracking-tight text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
+              <span className="tracking-tight text-xl md:text-3xl font-bold bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
                 AyuFinders
               </span>
             </Link>
