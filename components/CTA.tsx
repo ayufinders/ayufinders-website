@@ -34,7 +34,7 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
     const filled = sessionStorage.getItem("filled");
     const timer = setInterval(() => {
       if(filled!="1" && showDialog) setOpen(true);
-    }, 10000);
+    }, 20000);
 
     return () => {
       clearInterval(timer);
