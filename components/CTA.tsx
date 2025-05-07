@@ -86,7 +86,7 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
           </p>
           <div className="flex flex-wrap gap-4">
             <Dialog open={open} onOpenChange={setOpen}>
-            <Button onClick={() => setOpen(true)} className="bg-green-500 hover:bg-green-600 text-white">
+            <Button onClick={() => setOpen(true)} className="bg-blue-600 text-white">
               Get Counselling Support
             </Button>
               <DialogContent className="sm:max-w-md px-4">
@@ -131,7 +131,7 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
                   </div>
                 </div>
                 <DialogFooter>
-                  <Button onClick={handleSubmit} type="submit" className="bg-green-500 hover:bg-green-600 text-white">
+                  <Button onClick={handleSubmit} type="submit" className="bg-blue-600 text-white">
                     {loading ? "Sending..." : "Send"}
                   </Button>
                 </DialogFooter>
