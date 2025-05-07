@@ -124,7 +124,7 @@ export default function Home() {
         </section>
 
         {/* Top Colleges Section */}
-        <section className="shadow-lg max-md:py-10 max-md:px-4 mb-20 lg:bg-gradient-to-b lg:to-primary lg:via-primary/60 lg:from-gray-100 border md:p-12 rounded-2xl">
+        <section className="shadow-lg max-md:py-10 max-md:px-4 mb-20 bg-gradient-to-b to-primary via-primary/60 from-gray-100 border md:p-12 rounded-2xl">
           <SectionHeading 
             title="Top BAMS Colleges" 
             subtitle="Discover India's premier institutions for Ayurvedic medicine"
