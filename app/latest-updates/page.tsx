@@ -123,7 +123,7 @@ export default function LatestUpdatesPage() {
             <div className="md:mb-12 rounded-lg overflow-hidden shadow-md">
               <div className="relative aspect-[21/9]">
                 <Image
-                  src={`https://ayufinders.com/jeni/superera/media/banner/${updates[0]?.image}`}
+                  src={`https://media.ayufinders.com/jeni/superera/media/banner/${updates[0]?.image}`}
                   alt="Featured Update"
                   width={1280}
                   height={720}
@@ -231,7 +231,7 @@ export default function LatestUpdatesPage() {
                       >
                         <div className="h-16 w-16 rounded-md overflow-hidden flex-shrink-0">
                           <Image
-                            src={`https://ayufinders.com/jeni/superera/media/banner/${update.image}`}
+                            src={`https://media.ayufinders.com/jeni/superera/media/banner/${update.image}`}
                             alt={update.title}
                             className="h-full w-full object-cover"
                             width={64}

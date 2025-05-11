@@ -105,7 +105,7 @@ const CollegeDetailsPage = () => {
                 <CardDescription>{blog?.blog_category}</CardDescription>
                 <div>
                   <Image
-                  src={`https://ayufinders.com/jeni/superera/media/banner/${blog?.image}`}
+                  src={`https://media.ayufinders.com/jeni/superera/media/banner/${blog?.image}`}
                   alt={blog?.title as string}
                   height={400}
                   width={600}

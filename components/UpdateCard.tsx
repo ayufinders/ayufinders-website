@@ -40,7 +40,7 @@ const UpdateCard: React.FC<UpdateCardProps> = ({
     <Card className="overflow-hidden hover:shadow-md transition-all">
       <div className="aspect-[16/9] relative overflow-hidden">
         <Image
-          src={`https://ayufinders.com/jeni/superera/media/banner/${image}`}
+          src={`https://media.ayufinders.com/jeni/superera/media/banner/${image}`}
           alt={title}
           width={500}
           height={300}

@@ -25,7 +25,7 @@ const LocationCard: React.FC<LocationCardProps> = ({
     <Card className="overflow-hidden hover:shadow-md transition-all h-full flex flex-col">
       <div className="aspect-square relative overflow-hidden">
         <Image
-          src={`https://ayufinders.com/jeni/superera/media/banner/${image}`}
+          src={`https://media.ayufinders.com/jeni/superera/media/banner/${image}`}
           width={500}
           height={300}
           alt={"College Image"}

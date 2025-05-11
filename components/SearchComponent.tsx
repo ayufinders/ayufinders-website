@@ -95,7 +95,7 @@ export default function SearchComponent() {
                   >
                     <Avatar className="w-10 h-10 bg-gray-400">
                       <AvatarImage
-                        src={`https://ayufinders.com/jeni/superera/media/banner/${college.image}`}
+                        src={`https://media.ayufinders.com/jeni/superera/media/banner/${college.image}`}
                         alt={college.college}
                       />
                     </Avatar>

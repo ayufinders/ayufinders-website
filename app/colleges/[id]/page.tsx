@@ -95,7 +95,7 @@ const CollegeDetailsPage = () => {
             <div className="lg:w-full grid grid-cols-1 gap-3">
               <div className="aspect-video lg:w-full flex-1">
                 <Image
-                  src={`https://ayufinders.com/jeni/superera/media/banner/${selectedImage}`}
+                  src={`https://media.ayufinders.com/jeni/superera/media/banner/${selectedImage}`}
                   alt={college?.title || "College Image"}
                   className="w-full h-full rounded-lg object-cover"
                   height={400}
@@ -110,7 +110,7 @@ const CollegeDetailsPage = () => {
                     onClick={() => setSelectedImage(college?.image)}
                   >
                     <Image
-                      src={`https://ayufinders.com/jeni/superera/media/banner/${college?.image}`}
+                      src={`https://media.ayufinders.com/jeni/superera/media/banner/${college?.image}`}
                       alt={""}
                       className="w-full h-full rounded-lg object-cover"
                       height={30}
@@ -131,7 +131,7 @@ const CollegeDetailsPage = () => {
                       onClick={() => setSelectedImage(img)}
                     >
                       <Image
-                        src={`https://ayufinders.com/jeni/superera/media/banner/${img}`}
+                        src={`https://media.ayufinders.com/jeni/superera/media/banner/${img}`}
                         alt={""}
                         className="w-full h-full rounded-lg object-cover"
                         height={30}

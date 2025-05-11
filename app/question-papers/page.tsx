@@ -320,7 +320,7 @@ const QuestionPaperCard: React.FC<QuestionPaperCardProps> = ({
         </div>
       </CardContent>
       <CardFooter>
-        <a href={`https://ayufinders.com/jeni/superera/media/banner/${downloadLink}`} download target="_blank" rel="noopener noreferrer" className="w-full">
+        <a href={`https://media.ayufinders.com/jeni/superera/media/banner/${downloadLink}`} download target="_blank" rel="noopener noreferrer" className="w-full">
           <Button className="w-full flex items-center gap-2" variant="outline">
             <Download className="h-4 w-4" />
             Download PDF
