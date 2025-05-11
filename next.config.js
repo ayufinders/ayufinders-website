@@ -3,17 +3,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/',
-        has: [
-          {
-            type: 'host',
-            value: 'ayufinders.com',
-          },
-        ],
-        destination: 'https://www.ayufinders.com',
+        source: 'https://ayufinders.com/:path*',
+        destination: 'https://www.ayufinders.com/:path*',
         permanent: true,
       },
-    ];
+    ]
   },
   eslint: {
     ignoreDuringBuilds: true,
