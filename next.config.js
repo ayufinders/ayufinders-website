@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "ayufinders.com" }],
-        destination: "https://www.ayufinders.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  
   eslint: {
     ignoreDuringBuilds: true,
   },
