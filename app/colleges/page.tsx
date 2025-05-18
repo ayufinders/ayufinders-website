@@ -277,7 +277,7 @@ export default function CollegesPage() {
           {/* Colleges Section */}
           <div className="w-full">
             <Tabs defaultValue="all" className="mb-10">
-              <TabsList className="max-md:mb-20 mb-6 max-md:bg-transparent max-md:flex-wrap">
+              <TabsList className="max-md:mb-20 mb-6 max-md:bg-transparent flex-wrap">
                 {categories.map((cat) => (
                   <TabsTrigger
                     key={cat}
