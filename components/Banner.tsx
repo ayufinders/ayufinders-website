@@ -26,7 +26,7 @@ const Banner: React.FC<BannerProps> = ({
         )}
       >
         {/* Image Section */}
-        <div className="w-full md:h-auto h-1/2 md:w-1/2 relative">
+        <div className="w-full md:h-auto h-1/2 lg:w-1/2 relative">
           <Image
             src={imageUrl}
             className="w-full h-full object-cover"
@@ -37,7 +37,7 @@ const Banner: React.FC<BannerProps> = ({
         </div>
 
         {/* Content Section */}
-        <div className="w-full md:w-1/2 md:px-20 px-4 h-1/2 md:h-full flex flex-col justify-center bg-slate-50">
+        <div className="w-full lg:w-1/2 md:px-20 px-4 h-1/2 md:h-full flex flex-col justify-center bg-slate-50">
           <div className="max-w-2xl">
             <h1 className="text-3xl text-primary md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               {title}
