@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ayufinders.com
+
+# Sitemaps
+Sitemap: https://ayufinders.com/sitemap.xml
