@@ -62,18 +62,6 @@ export default function CollegesPage() {
     setLoading(true)
   }, [])
 
-  useEffect(() => {
-    const storedCategory = sessionStorage.getItem("category");
-    const storedSearchTerm = sessionStorage.getItem("searchTerm");
-    const storedRating = sessionStorage.getItem("rating");
-    const storedRegion = sessionStorage.getItem("region");
-
-    if (storedCategory) setCategory(storedCategory);
-    if (storedSearchTerm) setSearchTerm(storedSearchTerm);
-    if (storedRating) setRating(storedRating);
-    if (storedRegion) setRegion(storedRegion);
-  }, []);
-
   // Categories
   const categories = [
     "All",
