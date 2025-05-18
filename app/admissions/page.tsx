@@ -564,7 +564,8 @@ export default function AdmissionsPage() {
                     <li className="p-3 bg-muted rounded-lg">
                       <h4 className="font-semibold">Round 2</h4>
                       <p className="text-sm">
-                        For candidates who didn&apos;t get a seat or want to upgrade
+                        For candidates who didn&apos;t get a seat or want to
+                        upgrade
                       </p>
                     </li>
                     <li className="p-3 bg-muted rounded-lg">
@@ -592,42 +593,52 @@ export default function AdmissionsPage() {
                     Fee structure varies between government and private
                     institutions:
                   </p>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span>Government Colleges</span>
-                      <span className="font-semibold">
-                        ₹25,000 - ₹50,000 per year
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span>Private Colleges</span>
-                      <span className="font-semibold">
-                        ₹1,00,000 - ₹5,00,000 per year
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span>Hostel Fees (approx.)</span>
-                      <span className="font-semibold">
-                        ₹50,000 - ₹1,00,000 per year
-                      </span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Books & Other Expenses</span>
-                      <span className="font-semibold">
-                        ₹15,000 - ₹30,000 per year
-                      </span>
-                    </div>
-                  </div>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="w-2/3">
+                          College Type
+                        </TableHead>
+                        <TableHead className="text-right">
+                          Estimated Fees (Per Year)
+                        </TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell>Government Colleges</TableCell>
+                        <TableCell className="text-right font-semibold">
+                          ₹25,000 - ₹50,000
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Private Colleges</TableCell>
+                        <TableCell className="text-right font-semibold">
+                          ₹1,00,000 - ₹5,00,000
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Hostel Fees (approx.)</TableCell>
+                        <TableCell className="text-right font-semibold">
+                          ₹50,000 - ₹1,00,000
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell>Books & Other Expenses</TableCell>
+                        <TableCell className="text-right font-semibold">
+                          ₹15,000 - ₹30,000
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
                 </CardContent>
               </Card>
             </div>
           </div>
 
           {/** CTA */}
-        <CTA />
+          <CTA />
         </section>
-
-        
 
         {/* Requirements for Counselling */}
         <section className="mb-16">
@@ -1182,9 +1193,9 @@ export default function AdmissionsPage() {
                 <p>
                   For government Ayurvedic/Unani/Homeopathy colleges, deposit
                   Rs. 20,000 as security money. For private sector colleges,
-                  it&apos;s Rs. 50,000. If applying to both government and private
-                  sector, deposit Rs. 50,000. Deposit earnest money during
-                  registration.
+                  it&apos;s Rs. 50,000. If applying to both government and
+                  private sector, deposit Rs. 50,000. Deposit earnest money
+                  during registration.
                 </p>
                 <Table className="mt-4">
                   <TableHeader>
@@ -1203,7 +1214,9 @@ export default function AdmissionsPage() {
                       <TableCell>₹50,000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>For All India Quota/85% State Quota Seats</TableCell>
+                      <TableCell>
+                        For All India Quota/85% State Quota Seats
+                      </TableCell>
                       <TableCell>₹50,000</TableCell>
                     </TableRow>
                   </TableBody>
