@@ -31,23 +31,7 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.jpg" sizes="any" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "AyuFinders",
-            url: "https://ayufinders.com",
-            logo: "https://ayufinders.com/favicon.ico",
-            sameAs: ["https://www.instagram.com/ayufinders"],
-            description:
-              "India's leading platform for BAMS college admissions, updates, and jobs.",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: "https://ayufinders.com/search?q={search_term_string}",
-              "query-input": "required name=search_term_string",
-            },
-          })}
-        </script>
+        
       </head>
       <body className={`${poppins.variable} font-poppins`}>
         <ThemeProvider
