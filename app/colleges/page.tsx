@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import CTA from "@/components/CTA";
 import GeneralSkeleton from "@/components/Loader";
+import { useSearchParams } from "next/navigation";
 
 interface College {
   id: number;
@@ -44,8 +45,18 @@ export default function CollegesPage() {
 
   const [category, setCategory] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-  const [rating, setRating] = useState("All");
-  const [region, setRegion] = useState("All");
+  const [rating, setRating] = useState("");
+  const [region, setRegion] = useState("");
+
+  const searchParams = useSearchParams();
+  const location = searchParams.get('location');
+
+  useEffect(()=>{
+    if(location){
+      setSearchTerm(location)
+      sessionStorage.setItem("searchTerm", location);
+    }
+  }, [location])
 
   useEffect(()=>{
     setLoading(true)

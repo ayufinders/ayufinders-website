@@ -77,7 +77,7 @@ const CollegeDetailsPage = () => {
         <Button
           variant={"outline"}
           onClick={() => {
-            router.back();
+            router.replace('/colleges');
           }}
         >
           <ChevronLeft className="h-4 w-4 text-gray-600" /> Back
