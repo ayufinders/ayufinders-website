@@ -21,7 +21,7 @@ const Banner: React.FC<BannerProps> = ({
     <div className="max-md:px-4 bg-primary py-12">
       <div
         className={cn(
-          "banner shadow-lg md:shadow-none rounded-2xl container mx-auto flex flex-col md:flex-row justify-center overflow-hidden",
+          "banner shadow-lg md:shadow-none rounded-2xl container mx-auto flex flex-col lg:flex-row justify-center overflow-hidden",
           className
         )}
       >
