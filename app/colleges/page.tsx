@@ -43,10 +43,10 @@ export default function CollegesPage() {
   const ITEMS_PER_PAGE = 48;
   const [paginatedColleges, setPaginatedColleges] = useState<College[]>([]);
 
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
-  const [rating, setRating] = useState("");
-  const [region, setRegion] = useState("");
+  const [rating, setRating] = useState("All");
+  const [region, setRegion] = useState("All");
 
   const searchParams = useSearchParams();
   const location = searchParams.get('location');
