@@ -118,7 +118,7 @@ GROUP BY
     bc.category, bc.image, bc.id, bc.title_url
 ORDER BY
     college_count DESC
-LIMIT 5;
+LIMIT 6;
 `;
   const results = await query(sql);
   return results;

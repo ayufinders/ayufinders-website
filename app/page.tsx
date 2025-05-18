@@ -75,6 +75,9 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
+        {/** CTA */}
+        <CTA />
+
         {/* Job Updates Section */}
         <section className="mb-20">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
@@ -131,7 +134,7 @@ export default function Home() {
             className=''
           />
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {topCollegesResult.map((college: any) => (
               <CollegeCard key={college.id} {...college} />
             ))}
@@ -151,7 +154,7 @@ export default function Home() {
             subtitle="Explore the best regions in India for pursuing BAMS education"
           />
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
             {topLocationsResult.map((location: any) => (
               <LocationCard key={location.id} {...location} />
             ))}

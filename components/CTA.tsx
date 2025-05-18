@@ -29,17 +29,6 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
     phone: "",
     message: "",
   });
-
-  useEffect(() => {
-    const filled = sessionStorage.getItem("filled");
-    const timer = setInterval(() => {
-      if(filled!="1" && showDialog) setOpen(true);
-    }, 20000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [hasSubmitted, showDialog]);
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -75,7 +64,7 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
   };
 
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section className="container mx-auto px-4 md:px-8 py-16 md:my-12 bg-primary/10 rounded-2xl border border-primary/30 shadow-md">
       <div className="flex flex-col lg:flex-row justify-between gap-10 items-start">
         {/* Left: Text + CTA */}
         <div className="flex-1">
@@ -144,26 +133,7 @@ export default function CounselingSection({showDialog=true}: {showDialog?: boole
           </div>
         </div>
 
-        {/* Right: Contact Info */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-6">
-          <div className="flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
-            <Mail className="text-gray-600 w-5 h-5 mt-1" />
-            <div className="flex-1">
-              <p className="font-semibold text-gray-900 flex items-center gap-2">
-                Email <ExternalLink className="w-4 h-4" />
-              </p>
-              <p className="text-sm text-gray-700">info@ayufinders.com</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 border p-4 rounded-xl">
-            <Phone className="text-gray-600 w-5 h-5 mt-1" />
-            <div>
-              <p className="font-semibold text-gray-900">Phone number</p>
-              <p className="text-sm text-gray-700">+91 8881820484</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
