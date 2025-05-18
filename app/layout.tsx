@@ -31,8 +31,8 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.jpg" sizes="any" />
-        <script type="application/ld+json">
-          {JSON.stringify({
+        <script type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "AyuFinders",
@@ -42,8 +42,9 @@ export default function RootLayout({
             description:
               "India's leading platform for BAMS college admissions, updates, and jobs.",
             
-          })}
-        </script>
+          }) }}
+        ></script>
+        
       </head>
       <body className={`${poppins.variable} font-poppins`}>
         <ThemeProvider
