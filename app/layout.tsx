@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toast, ToastProvider } from "@/components/ui/toast";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,7 +32,8 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.jpg" sizes="any" />
-        <script type="application/ld+json"
+        <Script type="application/ld+json"
+        id="schema-org"
         dangerouslySetInnerHTML={{__html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
@@ -43,8 +45,19 @@ export default function RootLayout({
               "India's leading platform for BAMS college admissions, updates, and jobs.",
             
           }) }}
-        ></script>
-        
+        ></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-S6WF3YW361" />
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-S6WF3YW361', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </head>
       <body className={`${poppins.variable} font-poppins`}>
         <ThemeProvider
