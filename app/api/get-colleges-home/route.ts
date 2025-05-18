@@ -8,6 +8,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(results);
   } catch (error) {
     console.error('Search API error:', error);
+    console.log('Error details:', error);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }
 }
